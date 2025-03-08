@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import React from "react";
-import Breadcrumb from "./ui/breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Accueil - Portfolio - akastler",
+  description: "written by akastler with Next.js",
+};
+
 
 export default function Home() {
   return (
