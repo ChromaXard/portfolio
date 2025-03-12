@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import React, {  } from "react";
+import { NextIntlClientProvider, useMessages, useTranslations } from "next-intl";
 
 import Sidebar from "./ui/sidebar";
 import Breadcrumb from "./ui/breadcrumb";
 import Link from "next/link";
+import { pick } from "lodash";
 
 
 const geistMono = Noto_Sans({
@@ -21,17 +23,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  const { locale } = params;
+  const messages = useMessages();
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistMono.className} antialiased`}
       >
         <div className="flex h-screen">
           {/* Sidebar */}
-          <Sidebar />
+          <NextIntlClientProvider
+            locale={locale}
+            messages={JSON.parse(JSON.stringify(pick(messages, ["sidebar"])))}>
+            <Sidebar />
+          </NextIntlClientProvider>
           <div className="flex w-16"></div>
           {/* Contenu principal */}
           <div className="flex-1 p-5 overflow-auto">

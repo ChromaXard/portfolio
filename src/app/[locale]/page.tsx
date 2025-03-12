@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -8,9 +9,10 @@ export const metadata: Metadata = {
 
 
 export default function Home() {
+  const t = useTranslations('home');
   return (
     <div>
-      <h1 className="text-4xl font-bold">Axel Kastler</h1>
+      <h1 className="text-4xl font-bold">{t('main-text')}</h1>
     </div>
   );
 }

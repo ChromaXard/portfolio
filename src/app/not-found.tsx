@@ -1,14 +1,13 @@
-'use client';
-
+import { useTranslations } from "next-intl";
 import React from "react";
-import { usePathname } from 'next/navigation';
+import PathnameHandler from "./tools/pathnameHandler";
 
 export default function NotFound() {
-    const pathname = usePathname();
+    const t = useTranslations('notFound');
 
     return (
-        <div className="flex-1">
-            <p>Page &quot;{pathname}&quot; not Found</p>
+        <div>
+            <h1 className="text-gray-500">{t("main-text")} <PathnameHandler /></h1>
         </div>
     );
 }
