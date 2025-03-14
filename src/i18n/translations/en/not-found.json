@@ -1,3 +1,5 @@
 {
-    "main-text": "Page not found"
+	"notFound": {
+		"main-text": "Page not found"
+	}
 }

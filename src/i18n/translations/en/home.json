@@ -1,3 +1,5 @@
 {
-    "main-text": "Welcome to my portfolio"
+	"home": {
+		"main-text": "Welcome to my portfolio"
+	}
 }
