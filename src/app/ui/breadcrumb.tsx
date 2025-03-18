@@ -3,12 +3,31 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const Breadcrumb = () => {
+	useEffect(() => {
+			const loadTranslations = async () => {
+				const frTrad = await import("../../i18n/translations/fr/page-names.json");
+				const enTrad = await import("../../i18n/translations/en/page-names.json");
+				// Use the loaded translations here
+				setTranslations({ fr: frTrad.pageNames, en: enTrad.pageNames });
+				setIsMounted(true);
+			};
+			loadTranslations().then(() => {
+				setTranslations((prev) => ({ ...prev }));
+			});
+		}, []);
+	const [isMounted, setIsMounted] = useState(false);
+	const [translations, setTranslations] = useState<{ [key: string]: { [key: string]: string } }>({en: {}, fr: {}});
 	const pathname = usePathname();
 	const pathSegments = pathname.split("/").filter((segment) => segment);
 	const locale = pathSegments[0];
-	const t = useTranslations("pageNames");
+	function t(key: string) {
+		if (!translations[locale]) return "";
+		return translations[locale][key] || "";
+	}
+	// const t = useTranslations("pageNames");
 	
 
 	return (
@@ -26,7 +45,7 @@ const Breadcrumb = () => {
 					{/* Génération dynamique des breadcrumbs */}
 					{pathSegments.map((segment, index) => {
 						const href = "/" + pathSegments.slice(0, index + 1).join("/");
-						const hasLabel = t.has(segment);
+						const hasLabel = translations[locale] && translations[locale][segment];
 						var label = hasLabel ? t(segment) : segment;
 						if (label === "fr" || label === "en") {
 							return null;

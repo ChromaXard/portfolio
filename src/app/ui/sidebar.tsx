@@ -3,33 +3,34 @@
 import React, { startTransition, useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTimeZone } from "next-intl";
-import { useTranslations } from "use-intl";
+import { set } from "lodash";
 
 const Sidebar = () => {
-	// useEffect(() => {
-	// 	const loadTranslations = async () => {
-	// 		const frTrad = await import("../../i18n/translations/fr/page-names.json");
-	// 		const enTrad = await import("../../i18n/translations/en/page-names.json");
-	// 		// Use the loaded translations here
-	// 		setTranslations({ fr: frTrad.default, en: enTrad.default });
-	// 	};
-	// 	loadTranslations().then(() => {
-	// 		setTranslations((prev) => ({ ...prev }));
-	// 	});
-	// }, []);
+	useEffect(() => {
+		const loadTranslations = async () => {
+			const frTrad = await import("../../i18n/translations/fr/page-names.json");
+			const enTrad = await import("../../i18n/translations/en/page-names.json");
+			// Use the loaded translations here
+			setTranslations({ fr: frTrad.pageNames, en: enTrad.pageNames });
+			setIsMounted(true);
+		};
+		loadTranslations().then(() => {
+			setTranslations((prev) => ({ ...prev }));
+		});
+	}, []);
+	const [isMounted, setIsMounted] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	const [isProjectsOpen, setIsProjectsOpen] = useState(false);
 	const pathname = usePathname();
 	const locale = pathname.split("/")[1];
 	const localeToSet = locale === "en" ? "fr" : "en";
 	const pathToAdd = pathname.substring(3);
-	// const [translations, setTranslations] = useState<{ [key: string]: { [key: string]: string } }>({en: {}, fr: {}});
-	// function t(key: string) {
-	// 	if (!translations[locale]) return "";
-	// 	return translations[locale][key] || "";
-	// }
-	const t = useTranslations("pageNames");
+	const [translations, setTranslations] = useState<{ [key: string]: { [key: string]: string } }>({en: {}, fr: {}});
+	function t(key: string) {
+		if (!translations[locale]) return "";
+		return translations[locale][key] || "";
+	}
+	// const t = useTranslations("pageNames");
 
 	return (
 		<>
@@ -156,7 +157,7 @@ const Sidebar = () => {
 					</ul>
 					<div id="change-language" className="absolute bottom-5 left-5 ">
 						{
-							<Link href={`/${localeToSet}${pathToAdd}`}>
+							<Link href={`/${localeToSet}${pathToAdd}`} onClick={() => setIsOpen(false)}>
 								{locale === "en" ? "🇫🇷" : "🇬🇧"}
 							</Link>
 						}

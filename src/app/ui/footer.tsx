@@ -1,5 +1,3 @@
-'use client';
-
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -49,9 +47,9 @@ export default function Footer() {
 				</p>
 			</div>
 			<div className="text-center text-sm text-gray-500 mt-2">
-				<Link href="/mentions-legales">Mentions légales</Link>
+				<Link href="/mentions-legales">{t("legalMetions")}</Link>
 				<span className="mx-2">•</span>
-				<Link href="/plan-du-site">Plan du site</Link>
+				<Link href="/plan-du-site">{t("siteMap")}</Link>
 			</div>
 			<div className="text-center text-sm text-gray-500 mt-2">
 				© {new Date().getFullYear()} Portfolio - akastler.{" "}

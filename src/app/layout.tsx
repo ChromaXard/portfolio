@@ -6,9 +6,6 @@ import React from "react";
 
 import Sidebar from "./ui/sidebar";
 import Breadcrumb from "./ui/breadcrumb";
-import Footer from "./ui/footer";
-import { getMessages } from "next-intl/server";
-import { LocaleProvider } from "./ui/LocaleContext";
 
 const geistMono = Noto_Sans({
 	variable: "--font-noto-sans",
@@ -34,7 +31,7 @@ export default function RootLayout({
 		<html lang={params.locale}>
 			<body className={`${geistMono.className} antialiased`}>
 				<NextIntlClientProvider locale={params.locale} messages={messages}>
-						{/* Le reste du code */}
+					{/* Le reste du code */}
 					<div className="flex h-screen">
 						{/* Sidebar */}
 						<Sidebar />
@@ -42,8 +39,7 @@ export default function RootLayout({
 						{/* Contenu principal */}
 						<div className="flex-1 p-5 overflow-auto">
 							<Breadcrumb />
-							{children}
-							<Footer />
+							{children}{" "}
 						</div>
 					</div>
 				</NextIntlClientProvider>
