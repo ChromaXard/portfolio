@@ -36,12 +36,12 @@ const Sidebar = () => {
 		<>
 			{/* Sidebar */}
 			<div
-				className={`fixed left-0 top-0 h-full bg-gray-900 text-white p-5 transition-all duration-300 ease-in-out z-50 ${
+				className={`fixed left-0 top-0 h-full bg-gray-900 text-white transition-all duration-300 ease-in-out z-50 ${
 					isOpen ? "w-64" : "w-16"
 				}`}
 			>
 				{/* Bouton de toggle */}
-				<button onClick={() => setIsOpen(!isOpen)}>
+				<button onClick={() => setIsOpen(!isOpen)} className="w-16 h-10 flex items-center justify-center">
 					{isOpen ? (
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const Sidebar = () => {
 
 				{/* Contenu */}
 				<div
-					className={`transition-opacity duration-300 ${
+					className={`transition-opacity duration-300 p-5 ${
 						isOpen ? "opacity-100" : "opacity-0 hidden"
 					}`}
 				>

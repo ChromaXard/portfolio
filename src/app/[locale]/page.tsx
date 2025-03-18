@@ -34,7 +34,13 @@ export default function Home() {
   return (
     <div className="flex w-full h-screen">
       <div className="flex w-full h-1/2" style={style}>
-        <div className="flex w-full h-full bg-black" style={{opacity: 0.8}}>
+        <div className="flex flex-col w-full h-full bg-black text-white items-center justify-center" style={{opacity: 0.8}}>
+          <h1 className="text-4xl font-bold w-full text-center">
+            Kastler Axel
+          </h1>
+          <h2 className="text-3xl w-full text-center">
+            {t("subtitle")}
+          </h2>
         </div>
       </div>
     </div>

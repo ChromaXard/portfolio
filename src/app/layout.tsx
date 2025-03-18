@@ -33,14 +33,18 @@ export default function RootLayout({
 				<NextIntlClientProvider locale={params.locale} messages={messages}>
 					<header>
 						<Sidebar />
-						<div className="flex">
-							<div className="flex-none w-16 h-8"></div>
-							<Breadcrumb />
-						</div>
+						{/* <div className="flex">
+							<div className="flex-none w-16 h-8"></div> */}
+						<Breadcrumb />
+						{/* </div> */}
 					</header>
 					<div className="flex h-screen">
 						<div className="flex-none w-16"></div>
-						{children}{" "}
+						<div className="flex flex-col w-full h-full">
+							<div className="h-10"></div>
+							{children}{" "}
+						</div>
+
 					</div>
 				</NextIntlClientProvider>
 			</body>

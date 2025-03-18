@@ -31,7 +31,7 @@ const Breadcrumb = () => {
 	
 
 	return (
-		<div className="w-full bg-gray-800 align-middle p-2">
+		<div className="fixed top-0 left-16 w-full bg-gray-800 align-middle p-2 z-50 h-10">
 			<nav className="text-white text-sm">
 				<ul className="flex items-center space-x-2">
 					{/* Lien vers l'accueil */}
