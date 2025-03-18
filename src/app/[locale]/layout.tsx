@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 export default function Layout({ children }: { children: ReactNode }) {
     return (
       <>
-        <main>{children}</main>
+        <main className="flex w-full h-full bg-gray-100">{children}</main>
         <Footer />
       </>
     )

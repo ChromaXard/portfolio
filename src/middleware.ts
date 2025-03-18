@@ -15,7 +15,7 @@ export const redirectToDefaultLocale = (defaultLocale: string) => (next: any) =>
       const { pathname, origin } = req.nextUrl;
   
       // Ignorer les routes spéciales
-      if (pathname.startsWith("/_next") || pathname.startsWith("/api") || pathname.startsWith("/favicon.ico")) {
+      if (pathname.startsWith("/_next") || pathname.startsWith("/api") || pathname.startsWith("/favicon.ico") || pathname.endsWith(".png") || pathname.endsWith(".jpg") || pathname.endsWith(".jpeg") || pathname.endsWith(".jpg") || pathname.endsWith(".svg") || pathname.endsWith(".gif") || pathname.endsWith(".webp") || pathname.endsWith(".ico") || pathname.endsWith(".json") || pathname.endsWith(".xml") || pathname.endsWith(".webmanifest") || pathname.endsWith(".txt") || pathname.endsWith(".md") || pathname.endsWith(".yml") || pathname.endsWith(".yaml") || pathname.endsWith(".toml") || pathname.endsWith(".lock") || pathname.endsWith(".log") || pathname.endsWith(".env") || pathname.endsWith(".env.local") || pathname.endsWith(".env.development") || pathname.endsWith(".env.test") || pathname.endsWith(".env.production") || pathname.endsWith(".env.local") || pathname.endsWith(".env.development.local") || pathname.endsWith(".env.test.local") || pathname.endsWith(".env.production.local")) {
         return
       }
   

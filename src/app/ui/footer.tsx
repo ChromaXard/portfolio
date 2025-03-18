@@ -46,12 +46,12 @@ export default function Footer() {
 					</a>
 				</p>
 			</div>
-			<div className="text-center text-sm text-gray-500 mt-2">
+			<div className="text-center text-sm text-gray-500">
 				<Link href="/mentions-legales">{t("legalMetions")}</Link>
 				<span className="mx-2">•</span>
 				<Link href="/plan-du-site">{t("siteMap")}</Link>
 			</div>
-			<div className="text-center text-sm text-gray-500 mt-2">
+			<div className="text-center text-sm text-gray-500">
 				© {new Date().getFullYear()} Portfolio - akastler.{" "}
 				{t("rights")}
 			</div>

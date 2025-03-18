@@ -31,16 +31,16 @@ export default function RootLayout({
 		<html lang={params.locale}>
 			<body className={`${geistMono.className} antialiased`}>
 				<NextIntlClientProvider locale={params.locale} messages={messages}>
-					{/* Le reste du code */}
-					<div className="flex h-screen">
-						{/* Sidebar */}
+					<header>
 						<Sidebar />
-						<div className="flex w-16"></div>
-						{/* Contenu principal */}
-						<div className="flex-1 p-5 overflow-auto">
+						<div className="flex">
+							<div className="flex-none w-16 h-8"></div>
 							<Breadcrumb />
-							{children}{" "}
 						</div>
+					</header>
+					<div className="flex h-screen">
+						<div className="flex-none w-16"></div>
+						{children}{" "}
 					</div>
 				</NextIntlClientProvider>
 			</body>
