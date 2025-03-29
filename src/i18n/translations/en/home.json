@@ -1,5 +1,9 @@
 {
 	"home": {
-		"subtitle": "Future web developer"
+		"subtitle": "Future web developer",
+		"about": "Who am I?",
+		"projects": "Check out my projects",
+		"career": "Observe my career path",
+		"skills": "My skills"
 	}
 }

@@ -1,16 +1,14 @@
 "use client";
 
-import React, { startTransition, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { set } from "lodash";
 
 const Sidebar = () => {
 	useEffect(() => {
 		const loadTranslations = async () => {
 			const frTrad = await import("../../i18n/translations/fr/page-names.json");
 			const enTrad = await import("../../i18n/translations/en/page-names.json");
-			// Use the loaded translations here
 			setTranslations({ fr: frTrad.pageNames, en: enTrad.pageNames });
 			setIsMounted(true);
 		};
@@ -27,7 +25,7 @@ const Sidebar = () => {
 	const pathToAdd = pathname.substring(3);
 	const [translations, setTranslations] = useState<{ [key: string]: { [key: string]: string } }>({en: {}, fr: {}});
 	function t(key: string) {
-		if (!translations[locale]) return "";
+		if (!translations[locale] || isMounted == false) return "";
 		return translations[locale][key] || "";
 	}
 	// const t = useTranslations("pageNames");
@@ -41,7 +39,7 @@ const Sidebar = () => {
 				}`}
 			>
 				{/* Bouton de toggle */}
-				<button onClick={() => setIsOpen(!isOpen)} className="w-16 h-10 flex items-center justify-center">
+				<button onClick={() => setIsOpen(!isOpen)} className="w-16 h-10 flex items-center justify-center hover:cursor-pointer">
 					{isOpen ? (
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -82,21 +80,31 @@ const Sidebar = () => {
 					}`}
 				>
 					<ul>
+						{/* home link */}
 						<li className="mb-3">
 							<Link onClick={() => setIsOpen(false)} href={`/${locale}`}>
 								{t("home")}
 							</Link>
 						</li>
+						{/* career link */}
 						<li className="mb-3">
 							<Link onClick={() => setIsOpen(false)} href="/about">
 								{t("about")}
 							</Link>
 						</li>
+						{/* skills link */}
+						<li className="mb-3">
+							<Link onClick={() => setIsOpen(false)} href="/skills">
+								{t("skills")}
+							</Link>
+						</li>
+						{/* carreer link */}
 						<li className="mb-3">
 							<Link onClick={() => setIsOpen(false)} href="/career">
 								{t("career")}
 							</Link>
 						</li>
+						{/* projects link */}
 						<li className="mb-3">
 							<div className="flex items-center justify-between">
 								<Link onClick={() => setIsOpen(false)} href="/projects">
@@ -104,7 +112,7 @@ const Sidebar = () => {
 								</Link>
 								<button
 									onClick={() => setIsProjectsOpen(!isProjectsOpen)}
-									className="ml-2 focus:outline-none"
+									className="ml-2 hover:cursor-pointer"
 								>
 									<svg
 										className={`w-4 h-4 transform transition-transform duration-300 ${

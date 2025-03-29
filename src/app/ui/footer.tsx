@@ -47,7 +47,7 @@ export default function Footer() {
 				</p>
 			</div>
 			<div className="text-center text-sm text-gray-500">
-				<Link href="/mentions-legales">{t("legalMetions")}</Link>
+				<Link href="/legalMentions">{t("legalMetions")}</Link>
 				<span className="mx-2">•</span>
 				<Link href="/plan-du-site">{t("siteMap")}</Link>
 			</div>

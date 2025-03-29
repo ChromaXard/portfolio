@@ -6,7 +6,7 @@ import { MiddlewareFactory } from "./middlewares/types";
 import { withLogging } from "./middlewares/checkLocaleMiddlewaree";
 import { NextRequest, NextResponse } from "next/server";
 
-const wrappedIntlMiddleware: MiddlewareFactory = (next) => (request) => {
+const wrappedIntlMiddleware: MiddlewareFactory = () => (request) => {
     return createMiddleware(routing)(request);
 };
 

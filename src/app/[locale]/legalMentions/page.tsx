@@ -31,19 +31,19 @@ export default function LegalMentions() {
             <li>
                 Propriété intellectuelle
                 <div className="text-sm ml-10">
-                    <p className="">L'ensemble des contenus présents sur ce site (textes, images, logos, etc.) sont la propriété exclusive de Kastler Axel sauf mention contraire. Toute reproduction, même partielle, est interdite sans autorisation préalable.</p>
+                    <p className="">L&apos;ensemble des contenus présents sur ce site (textes, images, logos, etc.) sont la propriété exclusive de Kastler Axel sauf mention contraire. Toute reproduction, même partielle, est interdite sans autorisation préalable.</p>
                 </div>
             </li>
             <li>
                 Protection des données personnelles
                 <div className="text-sm ml-10">
-                    <p className="">Ce site ne collecte pas de données personnelles sans le consentement explicite de l'utilisateur. Pour toute demande de suppression ou d'accès aux données, contactez-moi à <a href="mailto:axel.kastler@outlook.fr" className="underline hover:text-blue-500">axel.kastler@outlook.fr</a>.</p>
+                    <p className="">Ce site ne collecte pas de données personnelles sans le consentement explicite de l&apos;utilisateur. Pour toute demande de suppression ou d&apos;accès aux données, contactez-moi à <a href="mailto:axel.kastler@outlook.fr" className="underline hover:text-blue-500">axel.kastler@outlook.fr</a>.</p>
                 </div>
             </li>
             <li>
                 Limitation de responsabilité
                 <div className="text-sm ml-10">
-                    <p className="">Les informations présentes sur ce site sont fournies à titre indicatif. L'éditeur ne saurait être tenu responsable des erreurs ou omissions.</p>
+                    <p className="">Les informations présentes sur ce site sont fournies à titre indicatif. L&apos;éditeur ne saurait être tenu responsable des erreurs ou omissions.</p>
                 </div>
             </li>
             <li>

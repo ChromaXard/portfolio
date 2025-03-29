@@ -1,5 +1,9 @@
 {
 	"home": {
-		"subtitle": "Développeur web en devenir"
+		"subtitle": "Développeur web en devenir",
+		"about": "Qui suis-je ?",
+		"projects": "Découvrez mes projets",
+		"career": "Observez mon parcours professionnel",
+		"skills": "Mes compétences"
 	}
 }

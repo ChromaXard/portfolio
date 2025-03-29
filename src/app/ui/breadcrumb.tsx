@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -24,7 +23,7 @@ const Breadcrumb = () => {
 	const pathSegments = pathname.split("/").filter((segment) => segment);
 	const locale = pathSegments[0];
 	function t(key: string) {
-		if (!translations[locale]) return "";
+		if (!translations[locale] || isMounted == false) return "";
 		return translations[locale][key] || "";
 	}
 	// const t = useTranslations("pageNames");
@@ -46,7 +45,7 @@ const Breadcrumb = () => {
 					{pathSegments.map((segment, index) => {
 						const href = "/" + pathSegments.slice(0, index + 1).join("/");
 						const hasLabel = translations[locale] && translations[locale][segment];
-						var label = hasLabel ? t(segment) : segment;
+						const label = hasLabel ? t(segment) : segment;
 						if (label === "fr" || label === "en") {
 							return null;
 						}

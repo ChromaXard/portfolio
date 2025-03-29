@@ -4,6 +4,9 @@
 		"about": "About",
 		"career": "Career",
 		"projects": "Projects",
-		"contact": "Contact"
+		"contact": "Contact",
+		"skills": "Skills",
+		"notFound": "404 Not Found",
+		"legalMentions": "Legal Mentions"
 	}
 }

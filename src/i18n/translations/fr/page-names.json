@@ -4,6 +4,9 @@
 		"about": "À propos",
 		"career": "Parcours professionnel",
 		"projects": "Projets",
-		"contact": "Contact"
+		"contact": "Contact",
+		"skills": "Compétences",
+		"notFound": "404 Non trouvé",
+		"legalMentions": "Mentions légales"
 	}
 }

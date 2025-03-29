@@ -25,7 +25,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 	params: { locale: string };
 }>) {
-	const messages = useMessages(); // 🔥 Récupère un objet JSON sérialisable
+	const messages = useMessages();
 
 	return (
 		<html lang={params.locale}>
@@ -44,7 +44,6 @@ export default function RootLayout({
 							<div className="h-10"></div>
 							{children}{" "}
 						</div>
-
 					</div>
 				</NextIntlClientProvider>
 			</body>
