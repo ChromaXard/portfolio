@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import Footer from "./ui/footer";
 
 import Sidebar from "./ui/sidebar";
 import Breadcrumb from "./ui/breadcrumb";
@@ -29,22 +30,20 @@ export default function RootLayout({
 
 	return (
 		<html lang={params.locale}>
-			<body className={`${geistMono.className} antialiased`}>
+			<body className={`${geistMono.className} antialiased min-h-screen`}>
 				<NextIntlClientProvider locale={params.locale} messages={messages}>
 					<header>
 						<Sidebar />
-						{/* <div className="flex">
-							<div className="flex-none w-16 h-8"></div> */}
 						<Breadcrumb />
-						{/* </div> */}
 					</header>
-					<div className="flex h-screen">
+					<div className="flex-1 flex flex-row h-screen">
 						<div className="flex-none w-16"></div>
 						<div className="flex flex-col w-full h-full">
 							<div className="h-10"></div>
 							{children}{" "}
 						</div>
 					</div>
+					<Footer />
 				</NextIntlClientProvider>
 			</body>
 		</html>

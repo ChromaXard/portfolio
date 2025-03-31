@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Footer() {
 	const t = useTranslations("footer");
 	return (
-		<footer className="text-center text-sm text-gray-500 fixed bottom-0 w-full">
+		<footer className="text-center text-sm bg-gray-800 text-gray-200">
 			<div>
 				<p>
 					<a
 						href="https://github.com/ChromaXard"
-						className="text-gray-500 hover:text-gray-600"
+						className=" hover:text-gray-600"
 						aria-label="GitHub"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -30,7 +30,7 @@ export default function Footer() {
 					<span className="mx-2">•</span>
 					<a
 						href="https://www.linkedin.com/in/akastler"
-						className="text-gray-500 hover:text-gray-600"
+						className=" hover:text-gray-600"
 						aria-label="LinkedIn"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -46,12 +46,12 @@ export default function Footer() {
 					</a>
 				</p>
 			</div>
-			<div className="text-center text-sm text-gray-500">
+			<div className="text-center text-sm ">
 				<Link href="/legalMentions">{t("legalMetions")}</Link>
 				<span className="mx-2">•</span>
 				<Link href="/plan-du-site">{t("siteMap")}</Link>
 			</div>
-			<div className="text-center text-sm text-gray-500">
+			<div className="text-center text-sm ">
 				© {new Date().getFullYear()} Portfolio - akastler.{" "}
 				{t("rights")}
 			</div>

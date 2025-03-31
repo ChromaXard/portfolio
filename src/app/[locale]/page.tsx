@@ -40,7 +40,7 @@ export default function Home() {
           <h2 className="text-3xl w-full text-center m-2">
             {t("subtitle")}
           </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center m-2">
+          <div className="flex flex-col lg:flex-row items-center justify-center m-2">
             <Link className="inline-block px-3 py-1 md:mx-2 my-2 bg-gray-500 text-white font-semibold rounded-lg hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" href="/about">
               {t("about")}
             </Link>
