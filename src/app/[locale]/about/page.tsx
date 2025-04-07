@@ -17,7 +17,18 @@ export default function About() {
           <div className="w-full p-3 break-words">
             <h1 className="font-semibold text-3xl">{t("title")}</h1>
             <p className="text-lg mt-2">{t("description")}</p>
-            <p className="text-lg mt-2">{t("past")}</p>
+            <div>
+              <h2 className="font-semibold text-2xl mt-4">
+                {t("interestsTitle")}
+              </h2>
+              <p className="text-lg mt-2">{t("personnalInterests")}</p>
+            </div>
+            <div>
+              <h2 className="font-semibold text-2xl mt-4">
+                {t("pastTitle")}
+              </h2>
+              <p className="text-lg mt-2">{t("past")}</p>
+            </div>
           </div>
           <div className="w-full bg-gray-500 flex items-center justify-center rounded-[2vw] min-h-[400px]">
             <Image

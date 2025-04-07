@@ -36,9 +36,9 @@ export default function RootLayout({
 						<Sidebar />
 						<Breadcrumb />
 					</header>
-					<div className="flex-1 flex flex-row h-screen">
+					<div className="flex-1 flex flex-row min-h-screen flex-grow">
 						<div className="flex-none w-16"></div>
-						<div className="flex flex-col w-full h-full">
+						<div className="flex flex-col w-full min-h-full">
 							<div className="h-10"></div>
 							{children}{" "}
 						</div>

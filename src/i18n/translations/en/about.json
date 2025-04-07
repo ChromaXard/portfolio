@@ -1,5 +1,10 @@
 {
     "about": {
-        "title": "Who am I?"
+        "title": "Who am I?",
+        "description" : "I am Axel Kastler, a learning full-stack web developer passionate about web development. I have been interested in this specific field for a good year now, more precisely since the beginning of a project at the school I attend (for the little information, it is a school of the 42 Network, more precisely the one in Mulhouse, Haut-Rhin, Alsace). Since the realization of this project, I experiment with everything that attracts me in the web, trying to touch on all areas and discover the most widespread languages in the field.",
+        "interestsTitle": "Outside of development",
+        "personnalInterests": "I also have a few passions that occupy the rest of the time when I am not doing development. I often listen to music. I am also what one can call a \"geek\" in the field, I am a little passionate about video games, manga, and anime. I consume these quite often in my free time.",
+        "pastTitle": "My past",
+        "past": "If we go back a few years, I was not at all in development. I only got seriously into it around 2018-2019, looking for something to occupy myself with because I had a serious medical problem that made it very difficult for me to go out. Following this, I did a professional baccalaureate in Digital Systems (RISC option for the detail), which launched me into the field, and I was immediately hooked. After my baccalaureate, preferring development, I turned to 42 Mulhouse to specialize in it."
     }
 }
