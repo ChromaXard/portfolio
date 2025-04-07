@@ -1,0 +1,23 @@
+{
+	"skills": {
+		"title": "Compétences",
+        "description": "Vous pouvez trouver ci-dessous mes compétences dans le développement de manière générale.",
+        "webDev": "Développement Web",
+        "noDetails" : "Aucun détail",
+        "detail": {
+            "title": "Détails",
+            "description": "Voici mes compétences dans le développement web.",
+            "projects": "Projets qui y ont touché",
+            
+            "css3" : {
+                "description": "Le langage de style standard pour la présentation de pages web. Il est utilisé pour styliser le contenu d'une page.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha",
+                    "portfolio"
+                ]
+            }
+
+        }
+	}
+}

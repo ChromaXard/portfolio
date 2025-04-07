@@ -13,6 +13,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const footer = await import(`./translations/${locale}/footer.json`);
   const pageNames = await import(`./translations/${locale}/page-names.json`);
   const about = await import(`./translations/${locale}/about.json`);
+  const skills = await import(`./translations/${locale}/skills.json`);
   return {
     locale,
     messages: {
@@ -20,7 +21,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...notFound,
 	  ...footer,
 	  ...pageNames,
-    ...about
+    ...about,
+    ...skills
     }
   };
 });
