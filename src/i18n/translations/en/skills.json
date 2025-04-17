@@ -2,6 +2,35 @@
     "skills": {
         "title": "Skills",
         "description": "You can find below my skills in development in general.",
-        "webDev": "Web Development"
+        "webDev": "Web Development",
+        "detail": {
+            "title": "Détails",
+            "description": "Voici Les langages et technologies que j'ai utilisés dans mes projets.",
+            "html5" : {
+                "description": "Le langage de balisage standard pour créer des pages web. Il est utilisé pour structurer le contenu d'une page.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha",
+                    "portfolio"
+                ]
+            },
+            "css3" : {
+                "description": "Le langage de style standard pour la présentation de pages web. Il est utilisé pour styliser le contenu d'une page.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha",
+                    "portfolio"
+                ]
+            },
+            "javascript" : {
+                "description": "Un langage de programmation utilisé pour rendre les pages web interactives. Il est souvent utilisé en conjonction avec HTML et CSS.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha",
+                    "portfolio"
+                ]
+            }
+
+        }
     }
 }

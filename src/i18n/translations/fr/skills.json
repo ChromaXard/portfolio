@@ -3,12 +3,18 @@
 		"title": "Compétences",
         "description": "Vous pouvez trouver ci-dessous mes compétences dans le développement de manière générale.",
         "webDev": "Développement Web",
-        "noDetails" : "Aucun détail",
         "detail": {
             "title": "Détails",
-            "description": "Voici mes compétences dans le développement web.",
-            "projects": "Projets qui y ont touché",
-            
+            "description": "Voici Les langages et technologies que j'ai utilisés dans mes projets.",
+            "usedWith" : "Utilisé sur les projets suivants :",
+            "html5" : {
+                "description": "Le langage de balisage standard pour créer des pages web. Il est utilisé pour structurer le contenu d'une page.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha",
+                    "portfolio"
+                ]
+            },
             "css3" : {
                 "description": "Le langage de style standard pour la présentation de pages web. Il est utilisé pour styliser le contenu d'une page.",
                 "projects" : [
@@ -16,8 +22,47 @@
                     "matcha",
                     "portfolio"
                 ]
+            },
+            "javascript" : {
+                "description": "Un langage de programmation utilisé pour rendre les pages web interactives. Il est souvent utilisé en conjonction avec HTML et CSS.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha",
+                    "portfolio"
+                ]
+            },
+            "typescript" : {
+                "description": "Un sur-ensemble de JavaScript qui ajoute des types statiques. Il est souvent utilisé pour développer des applications web complexes.",
+                "projects" : [
+                    "matcha",
+                    "portfolio"
+                ]
+            },
+            "bootstrap": {
+                "description": "Un framework CSS populaire pour le développement de sites web réactifs et mobiles. Il fournit des styles et des composants prédéfinis.",
+                "projects" : [
+                    "ft_transcendance"
+                ]
+            },
+            "tailwind": {
+                "description": "Un framework CSS utilitaire qui permet de créer des designs personnalisés rapidement. Il est basé sur des classes utilitaires.",
+                "projects" : [
+                    "matcha",
+                    "portfolio"
+                ]
+            },
+            "react": {
+                "description": "Une bibliothèque JavaScript pour construire des interfaces utilisateur. Elle permet de créer des composants réutilisables et de gérer l'état de l'application.",
+                "projects" : [
+                    "portfolio"
+                ]
+            },
+            "nextjs": {
+                "description": "Un framework React pour le développement d'applications web. Il offre des fonctionnalités comme le rendu côté serveur et la génération de sites statiques.",
+                "projects" : [
+                    "portfolio"
+                ]
             }
-
         }
 	}
 }
