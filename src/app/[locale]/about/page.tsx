@@ -30,7 +30,7 @@ export default function About() {
               <p className="text-lg mt-2">{t("past")}</p>
             </div>
           </div>
-          <div className="w-full bg-gray-500 flex items-center justify-center rounded-[2vw] min-h-[400px]">
+          <div className="w-full bg-gray-500 flex items-center justify-center rounded-[2vw] p-3">
             <Image
               src="/me.jpg"
               alt="akastler"

@@ -11,13 +11,13 @@ export const metadata: Metadata = {
 export default function About() {
 	const t = useTranslations("skills");
 	return (
-		<div className="m-4 flex-1">
-			<div className="p-4 flex-col lg:flex-row bg-gray-300 rounded-[2vw] w-full">
-				<h1 className="text-5xl">{t("title")}</h1>
-				<p className="text-lg mt-2">{t("description")}</p>
+		<div className="">
+			<div className="p-4 flex-col lg:flex-row bg-gray-300 rounded-[2vw] w-full break-normal">
+				<h1 className=" text-3xl lg:text-5xl">{t("title")}</h1>
+				<p className="text-sm lg:text-lg mt-2">{t("description")}</p>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
-					<div className="lg:col-span-2 h-25 flex items-center justify-center border-y-2">
-						<h2 className="text-4xl">{t("webDev")}</h2>
+					<div className="lg:col-span-2 min-h-25 flex items-center justify-center border-y-2">
+						<h2 className="text-2xl lg:text-4xl">{t("webDev")}</h2>
 					</div>
 					<div>
 						<LanguagePresentation name="html5" />
@@ -58,8 +58,8 @@ export default function About() {
 					<div className="lg:col-span-2 lg:justify-self-center lg:w-1/2">
 						<LanguagePresentation name="docker-compose" />
 					</div>
-					<div className="lg:col-span-2 h-25 flex items-center justify-center border-y-2">
-						<h2 className="text-4xl text-center">{t("otherLanguageUsed")}</h2>
+					<div className="lg:col-span-2 min-h-25 flex items-center justify-center border-y-2">
+						<h2 className="text-2xl lg:text-4xl text-center break-normal">{t("otherLanguageUsed")}</h2>
 					</div>
 					<div>
 						<LanguagePresentation name="python" />

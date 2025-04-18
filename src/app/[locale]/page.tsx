@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 import { getImageProps } from 'next/image'
 import Link from "next/link";
  
-function getBackgroundImage(srcSet = '') {
+export function getBackgroundImage(srcSet = '') {
   const imageSet = srcSet
     .split(', ')
     .map((str) => {

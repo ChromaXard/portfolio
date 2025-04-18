@@ -37,13 +37,16 @@ export default function RootLayout({
 						<Breadcrumb />
 					</header>
 					<div className="flex-1 flex flex-row min-h-screen flex-grow">
-						<div className="flex-none w-16"></div>
+						<div className="flex-none w-16 bg-gray-900"></div>
 						<div className="flex flex-col w-full min-h-full">
-							<div className="h-10"></div>
-							{children}{" "}
+							<div className="h-10 bg-gray-900"></div>
+							{children}
 						</div>
 					</div>
-					<Footer />
+					<div className="flex flex-row w-full">
+						<div className="flex-none w-16 bg-gray-900"></div>
+						<Footer />
+					</div>
 				</NextIntlClientProvider>
 			</body>
 		</html>
