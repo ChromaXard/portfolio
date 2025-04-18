@@ -15,6 +15,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 	const about = await import(`./translations/${locale}/about.json`);
 	const skills = await import(`./translations/${locale}/skills.json`);
 	const career = await import(`./translations/${locale}/career.json`);
+	const projects = await import(`./translations/${locale}/projects.json`);
 	return {
 		locale,
 		messages: {
@@ -25,6 +26,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 			...about,
 			...skills,
 			...career,
+			...projects,
 		},
 	};
 });

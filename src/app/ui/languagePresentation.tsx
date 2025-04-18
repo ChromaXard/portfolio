@@ -8,8 +8,8 @@ export default function LanguagePresentation({ name }: { name: string }) {
 			<div className="w-2/8 flex items-center justify-center">
 				<Image
 					src={(name === "docker-compose")
-						? "/docker.svg"
-						: `/${name}.svg`}
+						? "/icons/docker.svg"
+						: `/icons/${name}.svg`}
 					width={150}
 					height={150}
 					alt={`${name} svg logo`}
