@@ -1,13 +1,14 @@
 {
-    "skills": {
-        "title": "Skills",
+	"skills": {
+		"title": "Skills",
         "description": "You can find below my skills in development in general.",
         "webDev": "Web Development",
+        "otherLanguageUsed": "Other languages/frameworks used in different domains",
         "detail": {
-            "title": "Détails",
-            "description": "Voici Les langages et technologies que j'ai utilisés dans mes projets.",
+            "title": "Details",
+            "usedWith" : "Used on the following projects :",
             "html5" : {
-                "description": "Le langage de balisage standard pour créer des pages web. Il est utilisé pour structurer le contenu d'une page.",
+                "description": "The standard markup language for creating web pages. It is used to structure the content of a page.",
                 "projects" : [
                     "ft_transcendance",
                     "matcha",
@@ -15,7 +16,7 @@
                 ]
             },
             "css3" : {
-                "description": "Le langage de style standard pour la présentation de pages web. Il est utilisé pour styliser le contenu d'une page.",
+                "description": "The standard style language for the presentation of web pages. It is used to style the content of a page.",
                 "projects" : [
                     "ft_transcendance",
                     "matcha",
@@ -23,14 +24,94 @@
                 ]
             },
             "javascript" : {
-                "description": "Un langage de programmation utilisé pour rendre les pages web interactives. Il est souvent utilisé en conjonction avec HTML et CSS.",
+                "description": "A programming language used to make web pages interactive. It is often used in conjunction with HTML and CSS.",
                 "projects" : [
                     "ft_transcendance",
                     "matcha",
                     "portfolio"
                 ]
+            },
+            "typescript" : {
+                "description": "A superset of JavaScript that adds static types. It is often used to develop complex web applications.",
+                "projects" : [
+                    "matcha",
+                    "portfolio"
+                ]
+            },
+            "bootstrap": {
+                "description": "A popular CSS framework for developing responsive and mobile web sites. It provides predefined styles and components.",
+                "projects" : [
+                    "ft_transcendance"
+                ]
+            },
+            "tailwind": {
+                "description": "A utility-first CSS framework that allows you to create custom designs quickly. It is based on utility classes.",
+                "projects" : [
+                    "portfolio"
+                ]
+            },
+            "react": {
+                "description": "A JavaScript library for building user interfaces. It allows you to create reusable components and manage application state.",
+                "projects" : [
+                    "portfolio"
+                ]
+            },
+            "nextjs": {
+                "description": "A React framework for building server-rendered applications. It provides features like static site generation and server-side rendering.",
+                "projects" : [
+                    "portfolio"
+                ]
+            },
+            "flask": {
+                "description": "A lightweight web framework for Python. It is designed to make it easy to build web applications quickly.",
+                "projects" : [
+                    "matcha"
+                ]
+            },
+            "django": {
+                "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design. It is used for building complex web applications.",
+                "projects" : [
+                    "ft_transcendance"
+                ]
+            },
+            "python": {
+                "description": "A high-level programming language known for its readability and versatility. It is widely used in web development, data analysis, artificial intelligence, and more.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
+                ]
+            },
+            "c": {
+                "description": "A general-purpose programming language that is widely used for system programming and embedded systems. It is known for its performance and low-level access to memory.",
+                "projects" : [
+                ]
+            },
+            "c++": {
+                "description": "An extension of the C programming language that includes object-oriented features. It is used for system/software development and game programming.",
+                "projects" : [                    
+                ]
+            },
+            "sql": {
+                "description": "A domain-specific language used for managing and manipulating relational databases. It is used to query, insert, update, and delete data.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
+                ]
+            },
+            "docker": {
+                "description": "A platform for developing, shipping, and running applications in containers. It allows you to package an application with all its dependencies into a standardized unit.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
+                ]
+            },
+            "docker-compose": {
+                "description": "A tool for defining and running multi-container Docker applications. It allows you to define a multi-container application in a single file and run it with a single command.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
+                ]
             }
-
         }
-    }
+	}
 }

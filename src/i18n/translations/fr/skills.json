@@ -3,6 +3,7 @@
 		"title": "Compétences",
         "description": "Vous pouvez trouver ci-dessous mes compétences dans le développement de manière générale.",
         "webDev": "Développement Web",
+        "otherLanguageUsed": "Autres langages/frameworks utilisés sur différents domaines",
         "detail": {
             "title": "Détails",
             "description": "Voici Les langages et technologies que j'ai utilisés dans mes projets.",
@@ -47,7 +48,6 @@
             "tailwind": {
                 "description": "Un framework CSS utilitaire qui permet de créer des designs personnalisés rapidement. Il est basé sur des classes utilitaires.",
                 "projects" : [
-                    "matcha",
                     "portfolio"
                 ]
             },
@@ -61,6 +61,58 @@
                 "description": "Un framework React pour le développement d'applications web. Il offre des fonctionnalités comme le rendu côté serveur et la génération de sites statiques.",
                 "projects" : [
                     "portfolio"
+                ]
+            },
+            "flask": {
+                "description": "Un micro-framework Python pour le développement d'applications web. Il est léger et flexible, idéal pour les petites applications.",
+                "projects" : [
+                    "matcha"
+                ]
+            },
+            "django": {
+                "description": "Un framework web Python qui suit le modèle MVC. Il est conçu pour faciliter le développement rapide d'applications web.",
+                "projects" : [
+                    "ft_transcendance"
+                ]
+            },
+            "python": {
+                "description": "Un langage de programmation polyvalent et populaire. Il est utilisé pour le développement web, l'analyse de données, l'apprentissage automatique, etc.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
+                ]
+            },
+            "c": {
+                "description": "Un langage de programmation de bas niveau. Il est souvent utilisé pour le développement système et les applications nécessitant des performances élevées.",
+                "projects" : [
+                    
+                ]
+            },
+            "c++": {
+                "description": "Un langage de programmation orienté objet basé sur le C. Il est utilisé pour le développement de logiciels, de jeux et d'applications nécessitant des performances élevées.",
+                "projects" : [
+                    
+                ]
+            },
+            "sql": {
+                "description": "Un langage de requête utilisé pour interagir avec les bases de données relationnelles. Il est utilisé pour créer, lire, mettre à jour et supprimer des données.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
+                ]
+            },
+            "docker": {
+                "description": "Une plateforme de conteneurisation qui permet de créer, déployer et exécuter des applications dans des conteneurs. Elle facilite la gestion des dépendances et l'isolation des environnements.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
+                ]
+            },
+            "docker-compose": {
+                "description": "Un outil pour définir et exécuter des applications multi-conteneurs Docker. Il utilise un fichier YAML pour configurer les services de l'application.",
+                "projects" : [
+                    "ft_transcendance",
+                    "matcha"
                 ]
             }
         }

@@ -52,7 +52,7 @@ export default function Footer() {
 				<Link href="/plan-du-site">{t("siteMap")}</Link>
 			</div>
 			<div className="text-center text-sm ">
-				© {new Date().getFullYear()} Portfolio - akastler.{" "}
+				© {new Date().getFullYear()} Axel KASTLER.{" "}
 				{t("rights")}
 			</div>
 		</footer>

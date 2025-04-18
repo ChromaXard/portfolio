@@ -16,7 +16,7 @@ export default function About() {
 				<h1 className="text-5xl">{t("title")}</h1>
 				<p className="text-lg mt-2">{t("description")}</p>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
-					<div className="lg:col-span-2 h-25 flex items-center justify-center border-b-2">
+					<div className="lg:col-span-2 h-25 flex items-center justify-center border-y-2">
 						<h2 className="text-4xl">{t("webDev")}</h2>
 					</div>
 					<div>
@@ -32,18 +32,44 @@ export default function About() {
 						<LanguagePresentation name="typescript" />
 					</div>
 					<div>
+						<LanguagePresentation name="react" />
+					</div>
+					<div>
+						<LanguagePresentation name="nextjs" />
+					</div>
+					<div>
 						<LanguagePresentation name="bootstrap" />
 					</div>
 					<div>
 						<LanguagePresentation name="tailwind" />
 					</div>
 					<div>
-						<LanguagePresentation name="react" />
+						<LanguagePresentation name="flask" />
 					</div>
 					<div>
-						<LanguagePresentation name="nextjs" />
+						<LanguagePresentation name="django" />
 					</div>
-					<div className="bg-gray-500 h-25 rounded-[1vw] lg:col-span-2 lg:justify-self-center lg:w-1/2"></div>
+					<div>
+						<LanguagePresentation name="sql" />
+					</div>
+					<div>
+						<LanguagePresentation name="docker" />
+					</div>
+					<div className="lg:col-span-2 lg:justify-self-center lg:w-1/2">
+						<LanguagePresentation name="docker-compose" />
+					</div>
+					<div className="lg:col-span-2 h-25 flex items-center justify-center border-y-2">
+						<h2 className="text-4xl text-center">{t("otherLanguageUsed")}</h2>
+					</div>
+					<div>
+						<LanguagePresentation name="python" />
+					</div>
+					<div>
+						<LanguagePresentation name="c" />
+					</div>
+					<div className="lg:col-span-2 lg:justify-self-center lg:w-1/2">
+						<LanguagePresentation name="c++" />
+					</div>
 				</div>
 			</div>
 		</div>
