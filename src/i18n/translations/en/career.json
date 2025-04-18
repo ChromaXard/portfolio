@@ -1,0 +1,22 @@
+{
+	"career": {
+		"actual": {
+			"date": "November 2024 - Today",
+			"title": "Looking for an apprenticeship leading to a RNCP 6 title in web and mobile development",
+			"school": "42 Mulhouse, Haut-Rhin, Alsace, France",
+			"description": "The next step in my journey is to secure an apprenticeship in web/mobile development. I am highly motivated and ready to fully invest myself in this apprenticeship. I believe this will allow me to progress quickly and gain valuable experience in the field of web/mobile development."
+		},
+		"2022-2024": {
+			"date": "Octobre 2022 - Octobre 2024",
+			"title": "Tronc commun 42",
+			"school": "42 Mulhouse, Haut-Rhin, Alsace, France",
+			"description": "Le tronc commun de 42 est une formation immersive dans le développement informatique. Il est conçu pour enseigner les bases de la programmation et du développement logiciel. La formation est axée sur l'apprentissage par projet et la collaboration entre pairs. Les étudiants travaillent sur des projets concrets pour acquérir des compétences pratiques en programmation, en algorithmique et en résolution de problèmes. Le tronc commun couvre également des sujets tels que le développement web, la sécurité informatique et les bases de données. Cette formation est ouverte à tous, sans condition de diplôme, et vise à former des développeurs compétents et polyvalents."
+		},
+		"2019-2022": {
+			"date": "Septembre 2019 - Juillet 2022",
+			"title": "Bac Professionnel Systèmes Numériques option Réseaux Informatiques et Systèmes Communicants",
+			"school": "Lycée Charles Pointet, Thann, Haut-Rhin, Alsace, France",
+			"description": "Mon entrée dans le monde de l'informatique, la ou j'ai appris à connaître les différents domaines de base de l'informatique que ce soit le côté matériel, logiciel ou réseau. L'endroit ou j'ai également découvert le développement, ce qui m'a permis d'être là ou je suis aujourd'hui. J'ai également eu l'occasion de découvrir plus en profondeur la domotique et de toucher des sujets se rapprochant de la réalité."
+		}
+	}
+}
